@@ -19,7 +19,7 @@ Korzystaj z narzędzia przez agenta AI (np. w Cursor, Claude Code lub w podobnyc
 Na starcie agent pyta (albo rozpoznaje z prośby):
 
 1. **Uprość** — proponuje prostszą wersję i krótkie „co zostało zmienione”
-2. **Sprawdź** — audyt checklistą (cytat → reguła → propozycja)
+2. **Sprawdź** — audyt checklistą (cytat → reguła → propozycja), a na końcu pytanie: „Czy chcesz zobaczyć przykładową przepisaną wersję?”
 3. **Naucz** — jedna fiszka i mini-ćwiczenie
 4. **Napisz od zera** — dopyta o odbiorcę, cel i kanał, potem napisze
 

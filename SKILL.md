@@ -50,7 +50,7 @@ Nie wklejaj oryginału, chyba że użytkownik o to prosi. Jeśli coś musiało z
 
 ## Tryb 2: Sprawdź
 
-Nie przepisuj całości, chyba że użytkownik poprosi.
+Nie przepisuj całości w tej odpowiedzi.
 
 ```markdown
 ## Audyt
@@ -65,6 +65,12 @@ Nie przepisuj całości, chyba że użytkownik poprosi.
 ```
 
 Wymień tylko to, co widać w tekście. Pomiń reguły niemierzalne w tym kanale (np. szerokość linijki w czacie).
+
+Na końcu audytu zawsze zapytaj dokładnie:
+
+Czy chcesz zobaczyć przykładową przepisaną wersję?
+
+Jeśli użytkownik się zgodzi, oddaj wersję w układzie trybu 1 (Wersja uproszczona + Co zostało zmienione).
 
 ## Tryb 3: Naucz
 
