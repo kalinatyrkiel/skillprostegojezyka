@@ -6,7 +6,7 @@
     <title>Skill prostego języka</title>
     <meta
       name="description"
-      content="Skill i prompt do upraszczania treści po polsku. Upraszcza, pomaga przy pracy i uczy."
+      content="Skill i prompt do upraszczania treści po polsku. Upraszcza, pomaga przy pracy i uczy pisać prosto."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,7 +26,7 @@
       <header class="hero">
         <h1>Skill prostego języka</h1>
         <p class="lede">
-          Upraszcza treści po polsku. Pomaga w pracy. Uczy. Darmowy.
+          Upraszcza treści po polsku. Pomaga w pracy. Uczy pisać prosto.
         </p>
         <div class="tiles" aria-hidden="true">
           <span class="tile p">P</span>
@@ -39,30 +39,39 @@
 
       <section>
         <h2>Czym jest</h2>
+        <p>Skill działa na dwa sposoby:</p>
+        <ol class="steps">
+          <li>Instrukcja dla agenta AI</li>
+          <li>Prompt do wklejenia w czacie.</li>
+        </ol>
         <p>
-          To instrukcja dla agenta AI. Albo prompt do wklejenia w czacie.
-        </p>
-        <p>
-          Bierze checklistę prostego języka i stosuje ją do Twojego tekstu.
-          Nie zastępuje Cię. Daje propozycję.
+          Bierze checklistę prostego języka i stosuje ją do Twojego tekstu. Nie
+          zastępuje Cię. Daje propozycję.
         </p>
       </section>
 
       <section>
-        <h2>Skąd się wziął</h2>
+        <h2>Skąd pomysł?</h2>
         <p>
-          Z Checklisty Prostego Języka i fiszek Barbary Adamskiej i Kaliny
-          Tyrkiel-Szymańskiej z 2022 roku.
+          Checklistę i Fiszki Prostego Języka stworzyłyśmy w 2022 roku. Czasy
+          się zmieniły: zasady pozostały te same, ale zmienił się nasz sposób
+          pracy. Aby dopasować narzędzie do tego, jak pracujemy teraz,
+          stworzyłyśmy narzędzia AI.
+        </p>
+        <p>
+          Są tu po to, aby Cię wspierać – nie zastępować w myśleniu.
+          Odpowiedzialność za treści leży po Twojej stronie. Narzędzia to tylko
+          asystent.
         </p>
         <p>
           Checklista i fiszki uczą zasad. Skill robi z nich narzędzie do pracy
-          w Cursorze, Claude Code i innych czatach. Skill: październik 2026.
+          w Cursorze, Claude Code i innych, podobnych aplikacjach.
         </p>
       </section>
 
       <section>
         <h2>Jak działa</h2>
-        <p>Na starcie agent pyta o tryb. Albo rozpoznaje go z prośby.</p>
+        <p>Skill ma 4 główne tryby:</p>
         <div class="grid">
           <article class="card pink">
             <p class="label">Tryb 1</p>
@@ -82,13 +91,14 @@
           <article class="card purple">
             <p class="label">Tryb 3</p>
             <h3>Naucz</h3>
-            <p>Jedna fiszka. Mini-ćwiczenie. Potem feedback.</p>
+            <p>Jedna fiszka. Mini-ćwiczenie. Na końcu feedback.</p>
           </article>
           <article class="card green">
             <p class="label">Tryb 4</p>
             <h3>Napisz od zera</h3>
             <p>
-              Agent dopyta: kto czyta, co ma zrobić, kanał. Potem napisze.
+              Agent dopyta: kto czyta, co ma zrobić, jaki jest kanał
+              komunikacji. Gdy odpowiesz, wygeneruje swoją propozycję.
             </p>
           </article>
         </div>
@@ -156,8 +166,7 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
         </div>
         <p class="status" id="copy-status" aria-live="polite"></p>
         <p>
-          <code>prompt.md</code> jest samowystarczalny. Reszta plików nie jest
-          potrzebna.
+          <code>prompt.md</code> jest samowystarczalnym plikiem.
         </p>
       </section>
 
@@ -186,7 +195,7 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
           if (!response.ok) throw new Error("fetch");
           const text = await response.text();
           await navigator.clipboard.writeText(text);
-          status.textContent = "Prompt jest w schowku.";
+          status.textContent = "Gotowe! Prompt skopiowany do schowka.";
         } catch (error) {
           status.textContent =
             "Nie udało się skopiować. Otwórz prompt.md na GitHubie.";
