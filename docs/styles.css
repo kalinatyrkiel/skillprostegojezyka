@@ -9,6 +9,10 @@
   --paper: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -62,6 +66,7 @@ h2 {
 h3 {
   margin: 0 0 0.4rem;
   font-size: 1.35rem;
+  scroll-margin-top: 1rem;
 }
 
 .serif {
