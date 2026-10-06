@@ -1,8 +1,8 @@
 # Prosty język
 
-Skill (i prompt) do upraszczania polskiego, 2026. Działa przy pracy i przy nauce. Oparty na *Checklistie Prostego Języka* Barbary Adamskiej i Kaliny Tyrkiel-Szymańskiej, 2026 (edycja druga, rozszerzona; pierwsza: 2022).
+Skill (i prompt) do upraszczania treści po polsku. Upraszcza, pomaga przy pracy i uczy. Oparty na Checkliście Prostego Języka Barbary Adamskiej i Kaliny Tyrkiel-Szymańskiej, 2026 (edycja pierwsza: 2022).
 
-Nie jest to aplikacja. Korzystasz przez agenta w IDE albo przez wklejony prompt w czacie.
+Korzystaj z narzędzia przez agenta AI (np. w Cursor, Claude Code lub w podobnych narzędziach) lub przez wklejony prompt w czacie.
 
 ## Co jest w folderze
 
@@ -18,7 +18,7 @@ Nie jest to aplikacja. Korzystasz przez agenta w IDE albo przez wklejony prompt 
 
 Na starcie agent pyta (albo rozpoznaje z prośby):
 
-1. **Uprość** — oddaje prostszą wersję i krótkie „co zmieniłam”
+1. **Uprość** — proponuje prostszą wersję i krótkie „co zostało zmienione”
 2. **Sprawdź** — audyt checklistą (cytat → reguła → propozycja)
 3. **Naucz** — jedna fiszka i mini-ćwiczenie
 4. **Napisz od zera** — dopyta o odbiorcę, cel i kanał, potem napisze
@@ -61,8 +61,6 @@ Wskaż agentowi plik `SKILL.md` (custom instructions / agent skill). Obok muszą
 
 `prompt.md` jest samowystarczalny. Nie wymaga pozostałych plików.
 
-## Autorstwo reguł
+## Autorki
 
-Barbara Adamska, Kalina Tyrkiel-Szymańska, 2026 (edycja druga, rozszerzona; pierwsza: 2022).
-
-Skill: 2026.
+Barbara Adamska, Kalina Tyrkiel-Szymańska, 2026.
