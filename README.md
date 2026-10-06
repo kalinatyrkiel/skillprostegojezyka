@@ -52,7 +52,7 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/
 
 W projekcie: `.claude/skills/prosty-jezyk/` z tymi samymi plikami.
 
-## Inne IDE ze skillami (np. Copilot)
+## Inne narzędzia ze skillami (np. Copilot)
 
 Wskaż agentowi plik `SKILL.md` (custom instructions / agent skill). Obok muszą leżeć `checklist.md`, `fiszki.md` i `examples.md` — skill do nich odsyła.
 
