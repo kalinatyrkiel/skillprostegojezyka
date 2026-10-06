@@ -6,8 +6,8 @@
 - Zdania mają szyk podmiot → orzeczenie (*ja zrobiłam*).
 - Większość zdań jest w stronie czynnej.
 - Nie przeczymy dwa razy, gdy wystarczy stwierdzić. Zostaw gramatyczne przeczenia polskie (*nikt nie*, *nic nie*).
-- Używamy konkretnych czasowników. Zamiast „podaj”, piszemy „wpisz”.
-- Używamy najmniej skomplikowanej wersji słowa. Zamiast „zweryfikuj”, piszemy „sprawdź”.
+- Używamy konkretnych czasowników. *Podaj* → *wpisz* to przykład, nie słownik.
+- Używamy najmniej skomplikowanej wersji słowa. *Zweryfikuj* → *sprawdź* to przykład, nie słownik.
 
 ## Interpunkcja
 
@@ -39,4 +39,4 @@
 
 Barbara Adamska  
 Kalina Tyrkiel-Szymańska  
-2026 (edycja druga, rozszerzona; pierwsza: 2022)
+2022

@@ -10,6 +10,8 @@ description: >-
 
 Pracuj po polsku. Źródło reguł: [checklist.md](checklist.md). Uzasadnienia i źródła: [fiszki.md](fiszki.md). Przykłady przed/po: [examples.md](examples.md).
 
+Checklista: Barbara Adamska, Kalina Tyrkiel-Szymańska, 2022. Narzędzie: październik 2026.
+
 ## Start
 
 Jeśli użytkownik nie wskazał trybu, zapytaj i poczekaj:
@@ -19,21 +21,39 @@ Jeśli użytkownik nie wskazał trybu, zapytaj i poczekaj:
 3. **Naucz** — jedna fiszka i mini-ćwiczenie
 4. **Napisz od zera** — dopytaj: kto / co / kanał
 
-Rozpoznaj tryb z prośby, gdy jest oczywisty (`uprość ten mail` → 1, `oceń ten tekst` → 2, `naucz mnie o stronie czynnej` → 3, `napisz komunikat` → 4).
+Rozpoznaj tryb, gdy to widać:
+
+- `uprość ten mail` → 1
+- `oceń / sprawdź checklistą` → 2
+- `naucz mnie o stronie czynnej` → 3
+- `napisz komunikat` → 4
+- `popraw to` → zapytaj: Uprość czy Sprawdź?
+
+## Kolejność poprawek (tryb 1 i 4)
+
+1. Sens i fakty
+2. Struktura (nagłówki, piramida, akapity, listy)
+3. Zdania (długość, szyk, strona czynna, jedna informacja)
+4. Słowa (konkret, prostsze synonimy, formy do usunięcia)
+5. Interpunkcja
 
 ## Wspólne zasady
 
 - Nie zmieniaj faktów, liczb, dat, nazw, zobowiązań ani znaczenia.
 - Jeśli tekst jest niejasny — dopytaj, nie zgaduj.
+- Nie ruszaj identyfikatorów, linków, haseł, cytatów, nazw plików.
+- Najpierw kanał, potem checklista. SMS i push ≠ mail ≠ strona. W SMS-ie bez nagłówków i długich list, jeśli się nie mieszczą.
 - W trybach 1 i 4 ucz krótko (nazwy reguł). Pełne fiszki tylko w trybie 3.
+- *Podaj* → *wpisz*, *zweryfikuj* → *sprawdź* to przykłady, nie słownik. Szukaj analogicznych par.
 - Reguła 50–75 znaków na linijkę dotyczy dokumentów i UI, nie formatowania odpowiedzi w czacie.
 - Limit 15 słów w zdaniu; 20 to absolutne maksimum.
 - Przed oddaniem wersji końcowej sprawdź ją checklistą z [checklist.md](checklist.md).
+- Na końcu trybu 1 i 4 jedna linijka: To tylko sugestia. Zweryfikuj.
 
 ## Tryb 1: Uprość
 
 1. Przeczytaj tekst.
-2. Zastosuj checklistę. Zachowaj kanał (mail, strona, komunikat).
+2. Zastosuj checklistę. Najpierw kanał, potem zasady. SMS i push ≠ mail ≠ strona.
 3. Oddaj w tym układzie:
 
 ```markdown
@@ -46,7 +66,7 @@ Rozpoznaj tryb z prośby, gdy jest oczywisty (`uprość ten mail` → 1, `oceń 
 - [reguła]: [1 konkret, bez wykładu]
 ```
 
-Nie wklejaj oryginału, chyba że użytkownik o to prosi. Jeśli coś musiało zostać trudne (termin, cytat, nazwa własna), napisz to w jednym zdaniu na końcu.
+Nie wklejaj oryginału, chyba że użytkownik o to prosi. Jeśli coś musiało zostać trudne (termin, cytat, nazwa własna), napisz to w jednym zdaniu na końcu. Na końcu: To tylko sugestia. Zweryfikuj.
 
 ## Tryb 2: Sprawdź
 
@@ -102,14 +122,6 @@ Potem napisz tekst zgodny z checklistą. Układ:
 - bez -no/-to, rzeczowników zombie, imiesłowów, pisania o pisaniu
 ```
 
-Zaznacz tylko punkty, które zastosowałaś; nie udawaj audytu całego dokumentu, jeśli to krótki komunikat.
-
-## Kolejność poprawek
-
-1. Sens i fakty
-2. Struktura (nagłówki, piramida, akapity, listy)
-3. Zdania (długość, szyk, strona czynna, jedna informacja)
-4. Słowa (konkret, prostsze synonimy, formy do usunięcia)
-5. Interpunkcja
+Zaznacz tylko punkty, które zastosowałaś; nie udawaj audytu całego dokumentu, jeśli to krótki komunikat. Na końcu: To tylko sugestia. Zweryfikuj.
 
 Checklista: Barbara Adamska, Kalina Tyrkiel-Szymańska, 2022. Skill: październik 2026.

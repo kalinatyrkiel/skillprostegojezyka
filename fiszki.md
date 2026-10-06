@@ -26,11 +26,11 @@ Zostaw gramatyczne przeczenia polskie: *nikt nie*, *nic nie*. Łap tylko takie, 
 
 ### Używamy konkretnych czasowników. Zamiast „podaj”, piszemy „wpisz”
 
-Bądźmy konkretni. To zmniejsza szansę na nieporozumienie.
+Bądźmy konkretni. To zmniejsza szansę na nieporozumienie. *Podaj* → *wpisz* to przykład, nie słownik. Szukaj analogicznych par.
 
 ### Używamy najmniej skomplikowanej wersji słowa. Zamiast „zweryfikuj”, piszemy „sprawdź”
 
-Bo po co komplikować, kiedy można prosto?
+Bo po co komplikować, kiedy można prosto? *Zweryfikuj* → *sprawdź* to przykład, nie słownik.
 
 ## Interpunkcja
 
