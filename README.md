@@ -4,7 +4,7 @@ Skill (i prompt) do upraszczania treści po polsku. Upraszcza, pomaga przy pracy
 
 Korzystaj z narzędzia przez agenta AI (np. w Cursor, Claude Code lub w podobnych narzędziach) lub przez wklejony prompt w czacie.
 
-## Info
+## Zanim skorzystasz
 
 Pamiętaj, że odpowiedzi narzędzia to tylko sugestie. Mogą Ci pomóc w pracy i nauce, ale nie zawsze są poprawne. Zawsze weryfikuj odpowiedzi AI.
 
