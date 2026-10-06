@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skill prostego języka</title>
+    <meta
+      name="description"
+      content="Skill i prompt do upraszczania treści po polsku. Upraszcza, pomaga przy pracy i uczy."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="top">
+        <span>Pisz po prostu — skill</span>
+        <a href="https://github.com/kalinatyrkiel/skillprostegojezyka">GitHub</a>
+      </div>
+
+      <header class="hero">
+        <h1>Skill prostego języka</h1>
+        <p class="lede">
+          Upraszcza treści po polsku. Pomaga w pracy. Uczy. Darmowy.
+        </p>
+        <div class="tiles" aria-hidden="true">
+          <span class="tile p">P</span>
+          <span class="tile j">J</span>
+          <span class="tile two">2</span>
+          <span class="tile a">A</span>
+          <span class="tile b">B</span>
+        </div>
+      </header>
+
+      <section>
+        <h2>Czym jest</h2>
+        <p>
+          To instrukcja dla agenta AI. Albo prompt do wklejenia w czacie.
+        </p>
+        <p>
+          Bierze checklistę prostego języka i stosuje ją do Twojego tekstu.
+          Nie zastępuje Cię. Daje propozycję.
+        </p>
+      </section>
+
+      <section>
+        <h2>Skąd się wziął</h2>
+        <p>
+          Z Checklisty Prostego Języka i fiszek Barbary Adamskiej i Kaliny
+          Tyrkiel-Szymańskiej z 2022 roku.
+        </p>
+        <p>
+          Checklista i fiszki uczą zasad. Skill robi z nich narzędzie do pracy
+          w Cursorze, Claude Code i innych czatach. Skill: październik 2026.
+        </p>
+      </section>
+
+      <section>
+        <h2>Jak działa</h2>
+        <p>Na starcie agent pyta o tryb. Albo rozpoznaje go z prośby.</p>
+        <div class="grid">
+          <article class="card pink">
+            <p class="label">Tryb 1</p>
+            <h3>Uprość</h3>
+            <p>
+              Dostajesz prostszą wersję i krótkie „co zostało zmienione”.
+            </p>
+          </article>
+          <article class="card teal">
+            <p class="label">Tryb 2</p>
+            <h3>Sprawdź</h3>
+            <p>
+              Audyt checklistą: cytat, reguła, propozycja. Na końcu pytanie,
+              czy chcesz przykładową przepisaną wersję.
+            </p>
+          </article>
+          <article class="card purple">
+            <p class="label">Tryb 3</p>
+            <h3>Naucz</h3>
+            <p>Jedna fiszka. Mini-ćwiczenie. Potem feedback.</p>
+          </article>
+          <article class="card green">
+            <p class="label">Tryb 4</p>
+            <h3>Napisz od zera</h3>
+            <p>
+              Agent dopyta: kto czyta, co ma zrobić, kanał. Potem napisze.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Zanim skorzystasz</h2>
+        <p class="note">
+          Pamiętaj, że odpowiedzi narzędzia to tylko sugestie. Mogą Ci pomóc w
+          pracy i nauce, ale nie zawsze są poprawne. Zawsze weryfikuj odpowiedzi
+          AI.
+        </p>
+      </section>
+
+      <section>
+        <h2>Jak zainstalować</h2>
+
+        <h3 class="serif">Cursor</h3>
+        <p>Skill osobisty. Działa we wszystkich projektach:</p>
+        <pre><code>git clone https://github.com/kalinatyrkiel/skillprostegojezyka.git ~/prosty-jezyk
+mkdir -p ~/.cursor/skills/prosty-jezyk
+cp ~/prosty-jezyk/SKILL.md ~/prosty-jezyk/checklist.md ~/prosty-jezyk/fiszki.md ~/prosty-jezyk/examples.md ~/.cursor/skills/prosty-jezyk/</code></pre>
+        <p>
+          Albo skopiuj cały folder do <code>~/.cursor/skills/prosty-jezyk/</code>.
+        </p>
+        <p>
+          Skill tylko w jednym projekcie: te same pliki w
+          <code>.cursor/skills/prosty-jezyk/</code>.
+        </p>
+        <p>
+          W Cursorze możesz napisać: „użyj skilla prosty język” i wkleić tekst.
+        </p>
+
+        <h3 class="serif">Claude Code</h3>
+        <pre><code>mkdir -p ~/.claude/skills/prosty-jezyk
+cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</code></pre>
+        <p>
+          W projekcie: <code>.claude/skills/prosty-jezyk/</code> z tymi samymi
+          plikami.
+        </p>
+
+        <h3 class="serif">Inne narzędzia ze skillami (np. Copilot)</h3>
+        <p>
+          Wskaż agentowi plik <code>SKILL.md</code>. Obok muszą leżeć
+          <code>checklist.md</code>, <code>fiszki.md</code> i
+          <code>examples.md</code>.
+        </p>
+
+        <h3 class="serif">ChatGPT, Gemini i inne czaty bez skilli</h3>
+        <ol class="steps">
+          <li>Otwórz prompt albo skopiuj go przyciskiem poniżej.</li>
+          <li>
+            Wklej jako instrukcję niestandardową, custom GPT albo pierwszą
+            wiadomość.
+          </li>
+          <li>Potem wklej tekst albo napisz, czego potrzebujesz.</li>
+        </ol>
+        <div class="row">
+          <button type="button" id="copy-prompt">Skopiuj prompt.md</button>
+          <a
+            class="btn ghost"
+            href="https://github.com/kalinatyrkiel/skillprostegojezyka/blob/main/prompt.md"
+            >Otwórz prompt.md</a
+          >
+        </div>
+        <p class="status" id="copy-status" aria-live="polite"></p>
+        <p>
+          <code>prompt.md</code> jest samowystarczalny. Reszta plików nie jest
+          potrzebna.
+        </p>
+      </section>
+
+      <footer>
+        <p>
+          Autorki checklisty: Barbara Adamska, Kalina Tyrkiel-Szymańska, 2026.
+        </p>
+        <p>Skill: październik 2026. Checklista: 2022.</p>
+        <p>
+          <a href="https://github.com/kalinatyrkiel/skillprostegojezyka"
+            >Repozytorium na GitHubie</a
+          >
+        </p>
+      </footer>
+    </div>
+    <script>
+      const button = document.getElementById("copy-prompt");
+      const status = document.getElementById("copy-status");
+      const url =
+        "https://raw.githubusercontent.com/kalinatyrkiel/skillprostegojezyka/main/prompt.md";
+
+      button.addEventListener("click", async () => {
+        status.textContent = "Kopiuję…";
+        try {
+          const response = await fetch(url);
+          if (!response.ok) throw new Error("fetch");
+          const text = await response.text();
+          await navigator.clipboard.writeText(text);
+          status.textContent = "Prompt jest w schowku.";
+        } catch (error) {
+          status.textContent =
+            "Nie udało się skopiować. Otwórz prompt.md na GitHubie.";
+        }
+      });
+    </script>
+  </body>
+</html>

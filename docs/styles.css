@@ -1,0 +1,281 @@
+:root {
+  --ink: #111;
+  --muted: #444;
+  --line: #111;
+  --pink: #e31c79;
+  --teal: #0f766e;
+  --purple: #7c3aed;
+  --green: #15803d;
+  --paper: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.45;
+}
+
+.wrap {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 4rem;
+  position: relative;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+.serif,
+.lede {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 8vw, 4.4rem);
+  line-height: 1.05;
+  margin: 0.6rem 0 0.75rem;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 3px;
+}
+
+h2 {
+  font-size: 1.85rem;
+  margin: 2.5rem 0 0.8rem;
+}
+
+h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.35rem;
+}
+
+.serif {
+  font-size: 1.35rem;
+  margin: 1.75rem 0 0.5rem;
+}
+
+.lede {
+  font-size: 1.35rem;
+  max-width: 28rem;
+}
+
+p,
+li {
+  max-width: 40rem;
+}
+
+a {
+  color: var(--ink);
+}
+
+.hero {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.tiles {
+  position: absolute;
+  right: -0.5rem;
+  bottom: -1.5rem;
+  width: 9.5rem;
+  height: 8rem;
+  pointer-events: none;
+}
+
+.tile {
+  position: absolute;
+  width: 2.6rem;
+  height: 2.6rem;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  transform: rotate(-12deg);
+}
+
+.tile.p {
+  background: #7c3aed;
+  left: 0;
+  top: 1.4rem;
+  transform: rotate(-18deg);
+}
+
+.tile.j {
+  background: var(--pink);
+  left: 2.2rem;
+  top: 0;
+  transform: rotate(8deg);
+}
+
+.tile.two {
+  background: #22c55e;
+  left: 4.6rem;
+  top: 1.6rem;
+  transform: rotate(-6deg);
+}
+
+.tile.a {
+  background: #38bdf8;
+  left: 1.2rem;
+  top: 4.1rem;
+  transform: rotate(14deg);
+}
+
+.tile.b {
+  background: #eab308;
+  left: 5.4rem;
+  top: 4.4rem;
+  transform: rotate(20deg);
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 720px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tiles {
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.card {
+  border: 3px solid;
+  border-radius: 1.25rem;
+  padding: 1rem 1.1rem 1.15rem;
+  background: #fff;
+}
+
+.card.pink {
+  border-color: var(--pink);
+}
+
+.card.pink h3,
+.card.pink .label {
+  color: var(--pink);
+}
+
+.card.teal {
+  border-color: var(--teal);
+}
+
+.card.teal h3,
+.card.teal .label {
+  color: var(--teal);
+}
+
+.card.purple {
+  border-color: var(--purple);
+}
+
+.card.purple h3,
+.card.purple .label {
+  color: var(--purple);
+}
+
+.card.green {
+  border-color: var(--green);
+}
+
+.card.green h3,
+.card.green .label {
+  color: var(--green);
+}
+
+.card p {
+  margin: 0;
+  color: var(--ink);
+}
+
+.label {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.35rem;
+}
+
+.note {
+  border-left: 4px solid var(--pink);
+  padding: 0.2rem 0 0.2rem 1rem;
+}
+
+pre {
+  overflow: auto;
+  background: #f6f6f6;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+code {
+  font-size: 0.92em;
+}
+
+.steps {
+  padding-left: 1.2rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0 0.4rem;
+}
+
+button,
+.btn {
+  appearance: none;
+  border: 2px solid var(--ink);
+  background: var(--ink);
+  color: #fff;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn.ghost {
+  background: #fff;
+  color: var(--ink);
+}
+
+.status {
+  min-height: 1.4em;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--ink);
+  font-size: 1rem;
+}
