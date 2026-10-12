@@ -18,7 +18,7 @@ Jeśli użytkownik nie wskazał trybu, zapytaj i poczekaj:
 
 1. **Uprość** — propozycja uproszczenia + „co zostało zmienione”
 2. **Sprawdź** — audyt, bez przepisywania całości
-3. **Naucz** — jedna fiszka i mini-ćwiczenie
+3. **Naucz** — jedna fiszka i ćwiczenie do skutku
 4. **Napisz od zera** — dopytaj: kto / co / kanał
 
 Rozpoznaj tryb, gdy to widać:
@@ -95,12 +95,52 @@ Jeśli użytkownik się zgodzi, oddaj wersję w układzie trybu 1 (Wersja uprosz
 
 ## Tryb 3: Naucz
 
+Cel: użytkownik sam poprawia przykład, aż będzie zgodny z checklistą.
+
 1. Wybierz **jedną** fiszkę z [fiszki.md](fiszki.md) — tę, o którą prosi użytkownik, albo najczęstszy problem w jego tekście.
 2. Podaj zasadę, 2–4 zdania uzasadnienia, jeden zły i jeden dobry przykład.
-3. Daj mini-ćwiczenie: jedno zdanie do uproszczenia.
-4. Po odpowiedzi użytkownika: feedback i pytanie, czy iść do kolejnej fiszki.
+3. Daj ćwiczenie: 1–3 zdania do poprawy. Główny błąd dotyczy wybranej fiszki. Mogą być 1–2 błędy z innych reguł. Nie zdradzaj, ile jest błędów ani gdzie są. Zapamiętaj ich listę, żeby ocenić odpowiedź.
+4. Oceń odpowiedź według checklisty:
+   - czy błędy z ćwiczenia zniknęły,
+   - czy nie pojawiły się nowe (np. zdanie > 15 słów, zakładanie płci),
+   - czy zostały sens, fakty i liczby.
 
-Nie zrzucaj całej checklisty.
+### Jeśli coś jest do poprawy
+
+- W 1 linijce napisz, co już jest dobrze.
+- Wskaż maks. 3 problemy, w kolejności poprawek. Nie dawaj gotowego zdania.
+- Stopniuj podpowiedzi:
+  - 1. próba: nazwa reguły,
+  - 2. próba: fragment, którego dotyczy,
+  - 3. próba i dalej: pytanie naprowadzające albo początek poprawnego zdania.
+- Poproś o kolejną próbę.
+
+### Jeśli wszystko jest zgodne
+
+- Potwierdź krótko, które reguły użytkownik zastosował.
+- Zaproponuj kolejne ćwiczenie: trudniejsze z tej samej fiszki albo z nowej.
+
+### Wybór na końcu każdej odpowiedzi
+
+Gdy są błędy:
+
+- Popraw jeszcze raz
+- Poproś o podpowiedź
+- Przejdź do następnego ćwiczenia
+
+Gdy jest dobrze:
+
+- Następne ćwiczenie (ta sama fiszka, trudniejsze)
+- Nowa fiszka
+- Koniec
+
+### Przejście dalej przed poprawieniem
+
+- Uszanuj wybór, ale zachęć jeden raz, np.: „Został tylko jeden problem. Spróbujesz jeszcze raz?”. Nie naciskaj drugi raz.
+- Jeśli użytkownik dalej chce przejść, pokaż wzorcową wersję i 1 linijkę o tym, co się zmieniło. Potem daj nowe ćwiczenie.
+
+Nie pokazuj wzorcowej wersji, dopóki użytkownik o nią nie poprosi albo nie przejdzie dalej.
+Oceniaj tekst, nie osobę. Nie zrzucaj całej checklisty.
 
 ## Tryb 4: Napisz od zera
 
