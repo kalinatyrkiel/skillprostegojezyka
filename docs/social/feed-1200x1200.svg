@@ -6,7 +6,7 @@
   <text x="80" y="320" fill="#111111" font-family="Georgia, serif" font-size="92" font-weight="700">języka</text>
   <line x1="80" y1="350" x2="620" y2="350" stroke="#111111" stroke-width="6"/>
   <text x="80" y="420" fill="#111111" font-family="Arial, sans-serif" font-size="36">Dla ChatGPT, Claude, Cursora</text>
-  <text x="80" y="470" fill="#111111" font-family="Arial, sans-serif" font-size="36">i innych narzędzi AI.</text>
+  <text x="80" y="470" fill="#111111" font-family="Arial, sans-serif" font-size="36">i innych narzędzi AI</text>
   <g transform="translate(80,560)">
     <rect x="0" y="0" width="500" height="140" rx="28" stroke="#e31c79" stroke-width="6" fill="#fff"/>
     <text x="250" y="88" fill="#e31c79" font-family="Georgia, serif" font-size="52" font-weight="700" text-anchor="middle">Uprość</text>

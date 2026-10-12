@@ -6,7 +6,7 @@
   <text x="80" y="370" fill="#111111" font-family="Georgia, serif" font-size="78" font-weight="700">języka</text>
   <line x1="80" y1="400" x2="520" y2="400" stroke="#111111" stroke-width="5"/>
   <text x="80" y="480" fill="#111111" font-family="Arial, sans-serif" font-size="36">Dla ChatGPT, Claude, Cursora</text>
-  <text x="80" y="530" fill="#111111" font-family="Arial, sans-serif" font-size="36">i innych narzędzi AI.</text>
+  <text x="80" y="530" fill="#111111" font-family="Arial, sans-serif" font-size="36">i innych narzędzi AI</text>
   <g transform="translate(80,620)">
     <rect x="0" y="0" width="920" height="120" rx="28" stroke="#e31c79" stroke-width="6" fill="#fff"/>
     <text x="460" y="78" fill="#e31c79" font-family="Georgia, serif" font-size="52" font-weight="700" text-anchor="middle">Uprość</text>
@@ -22,7 +22,7 @@
     <rect x="80" y="0" width="90" height="90" fill="#e31c79" transform="rotate(8 125 45)"/>
     <rect x="170" y="50" width="90" height="90" fill="#22c55e" transform="rotate(-6 215 95)"/>
   </g>
-  <text x="80" y="1320" fill="#111111" font-family="Arial, sans-serif" font-size="40" font-weight="600" text-decoration="underline" text-decoration-thickness="2">kalinatyrkiel.github.io/skillprostegojezyka</text>
-  <text x="80" y="1385" fill="#444444" font-family="Arial, sans-serif" font-size="30">Checklista i fiszki prostego języka: 2022</text>
-  <text x="80" y="1435" fill="#444444" font-family="Arial, sans-serif" font-size="30">Skill: 2026</text>
+  <!-- Puste pole na wklejkę: jak jedna karta trybu (920×120), y 1270–1390 -->
+  <text x="80" y="1460" fill="#444444" font-family="Arial, sans-serif" font-size="30">Checklista i fiszki prostego języka: 2022</text>
+  <text x="80" y="1510" fill="#444444" font-family="Arial, sans-serif" font-size="30">Skill: 2026</text>
 </svg>
