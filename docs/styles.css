@@ -318,6 +318,23 @@ footer {
   margin: 2.5rem 0 0;
 }
 
+@media (min-width: 960px) {
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 24rem;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  .intro .demo {
+    margin: 1.85rem 0 0;
+  }
+
+  .intro .chat {
+    max-width: 24rem;
+  }
+}
+
 .chat {
   max-width: 27rem;
   border: 3px solid var(--ink);
