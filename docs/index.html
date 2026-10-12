@@ -99,20 +99,12 @@
                 >
               </button>
             </div>
-            <div class="sr-only">
-              Przykład rozmowy. Użytkownik pisze: „uprość ten mail” — i wkleja
-              treść: „Uprzejmie informujemy, iż w celu dokończenia weryfikacji
-              zgłoszenia niezbędne jest dostarczenie skanu dokumentu
-              tożsamości, w związku z czym prosimy o jego przesłanie w terminie
-              7 dni.” Skill odpowiada. Wersja uproszczona: Prześlij skan
-              dokumentu tożsamości w ciągu 7 dni. Bez niego nie możemy
-              sprawdzić zgłoszenia. Co zostało zmienione: pisanie o pisaniu —
-              „Uprzejmie informujemy” → po prostu pisz; rzeczowniki zombie —
-              „dokończenia weryfikacji” → „sprawdzić”; najważniejsze na
-              początku — termin już w pierwszym zdaniu. To tylko sugestia.
-              Zweryfikuj.
-            </div>
-            <div class="chat-body" id="chat-body" aria-hidden="true">
+            <div
+              class="chat-body"
+              id="chat-body"
+              tabindex="0"
+              aria-label="Podgląd rozmowy, można przewijać"
+            >
               <div class="msg user">
                 <div class="bubble">
                   <p>uprość ten mail:</p>
@@ -234,7 +226,7 @@
           <li>Potem wklej tekst albo napisz, czego potrzebujesz.</li>
         </ol>
         <div class="row">
-          <button type="button" id="copy-prompt">Skopiuj prompt.md</button>
+          <button type="button" id="copy-prompt">Skopiuj prompt</button>
           <a
             class="btn ghost"
             href="https://github.com/kalinatyrkiel/skillprostegojezyka/blob/main/prompt.md"
@@ -380,6 +372,16 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
         var step = 0;
         var started = false;
         var finished = false;
+        var stick = true;
+
+        body.addEventListener("scroll", function () {
+          stick =
+            body.scrollTop + body.clientHeight >= body.scrollHeight - 8;
+        });
+
+        function stickBottom() {
+          if (stick) body.scrollTop = body.scrollHeight;
+        }
 
         function wait(ms, fn) {
           timeouts.push(setTimeout(fn, ms));
@@ -402,6 +404,7 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
                 caret
               );
               i++;
+              stickBottom();
               var delay =
                 speed === "human" ? 50 + Math.random() * 90 : speed;
               wait(delay, tick);
@@ -459,6 +462,7 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
         var steps = [
           function typeUser(done) {
             body.innerHTML = "";
+            stick = true;
             var b = addBubble("user");
             var intro = document.createElement("p");
             b.appendChild(intro);
@@ -475,11 +479,13 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
             d.innerHTML =
               '<div class="bubble dots"><span></span><span></span><span></span></div>';
             body.appendChild(d);
+            stickBottom();
             wait(2000, done);
           },
           function typeSkill(done) {
             body.lastChild.remove();
             var b = addBubble("skill");
+            stickBottom();
             typeSegments(b, SKILL, done);
           },
         ];

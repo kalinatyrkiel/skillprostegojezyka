@@ -379,8 +379,13 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  justify-content: flex-end;
-  min-height: 25rem;
+  height: 21rem;
+  overflow-y: auto;
+}
+
+.chat-body:focus-visible {
+  outline: 3px solid var(--pink-text);
+  outline-offset: -3px;
 }
 
 .msg {
@@ -470,7 +475,7 @@ footer {
 
 @media (max-width: 480px) {
   .chat-body {
-    min-height: 30rem;
+    height: 22rem;
   }
 }
 
