@@ -14,7 +14,7 @@
 - Jeśli przecinek może być kropką, niech zostanie kropką.
 - W tekście nie ma średników.
 - „r.” nie jest przyklejone do roku. Pisz *2023 r.*, nie *2023r.*
-- Po zwrocie grzecznościowym na koniec mejla nie mamy przecinka.
+- Po zwrocie grzecznościowym na koniec maila nie mamy przecinka.
 
 ## Struktura tekstu
 

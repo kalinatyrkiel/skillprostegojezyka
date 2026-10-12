@@ -64,7 +64,7 @@ Pisz tak. W trybie Sprawdź oceniaj, czy tekst tak jest.
 - Przecinek może być kropką → daj kropkę.
 - W tekście nie ma średników.
 - *r.* to rok. Pisz *2023 r.*, nie *2023r.*
-- Po zwrocie na końcu mejla nie stawiaj przecinka.
+- Po zwrocie na końcu maila nie stawiaj przecinka.
 
 ### Struktura
 

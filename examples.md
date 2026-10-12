@@ -72,7 +72,7 @@ Każdy plik może mieć najwyżej 5 MB. Termin: 30.11.
 
 **Reguły:** brak form męskich wobec odbiorcy; rozkaz zamiast opisu błędu w formie męskiej; *czy na pewno* zamiast *czy jesteś pewien*; prostsze, krótsze zdania.
 
-## Zakończenie mejla
+## Zakończenie maila
 
 **Przed**
 
@@ -85,4 +85,4 @@ Zespół obsługi
 Z poważaniem  
 Zespół obsługi
 
-**Reguła:** po zwrocie grzecznościowym na koniec mejla nie ma przecinka.
+**Reguła:** po zwrocie grzecznościowym na koniec maila nie ma przecinka.

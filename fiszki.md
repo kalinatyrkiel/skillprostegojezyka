@@ -46,7 +46,7 @@ To zasada związana z poprzednią. Średnik często można zamienić na kropkę.
 
 `r.` to skrót od *roku*. Pisz *2023 r.*, nie *2023r.* Nie dopisuj `r.` do dnia i miesiąca bez roku. Kwestia przejrzystości. Daj mu trochę oddechu!
 
-### Po zwrocie grzecznościowym na koniec mejla nie ma przecinka
+### Po zwrocie grzecznościowym na koniec maila nie ma przecinka
 
 Zaskakujące? Przecinka używamy w języku angielskim. Po polsku nie ma takiej potrzeby.
 
