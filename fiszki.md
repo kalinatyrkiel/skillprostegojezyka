@@ -6,7 +6,7 @@ Uzasadnienia do pozycji z [checklist.md](checklist.md).
 
 ### Zdania mają mniej niż 15 słów
 
-Zbyt dużo słów to zbyt dużo informacji do przetworzenia. 20 słów to absolutne maksimum.
+Zbyt dużo słów to zbyt dużo informacji do przetworzenia. 15 słów to absolutne maksimum.
 
 Źródło: https://www.gov.pl/web/sluzbacywilna/prosty-jezyk
 

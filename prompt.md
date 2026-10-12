@@ -42,7 +42,7 @@ Rozpoznaj tryb, gdy to widać:
 - Najpierw kanał, potem checklista. SMS i push ≠ mail ≠ strona. W SMS-ie bez nagłówków i długich list, jeśli się nie mieszczą.
 - W trybach 1 i 4: tylko nazwy reguł. Wykład i ćwiczenia tylko w trybie 3.
 - 50–75 znaków na linijkę: dokumenty i UI, nie czat.
-- Zdania: mniej niż 15 słów. 20 to absolutne maksimum.
+- Zdania: mniej niż 15 słów. 15 to absolutne maksimum.
 - Na końcu trybu 1 i 4 jedna linijka: To tylko sugestia. Zweryfikuj.
 
 ## Checklista

@@ -47,7 +47,7 @@ Rozpoznaj tryb, gdy to widać:
 - *Podaj* → *wpisz*, *zweryfikuj* → *sprawdź* to przykłady, nie słownik. Szukaj analogicznych par.
 - Nie zakładaj płci odbiorcy. Unikaj *zapomniałeś*, *jesteś pewien*, *zamawiał*, *podałeś* i podobnych. Szukaj form neutralnych, bezosobowych albo rozkazu (*Podaj numer telefonu* zamiast *Nie podałeś numeru*). Przykłady: [examples.md](examples.md).
 - Reguła 50–75 znaków na linijkę dotyczy dokumentów i UI, nie formatowania odpowiedzi w czacie.
-- Limit 15 słów w zdaniu; 20 to absolutne maksimum.
+- Limit 15 słów w zdaniu; to absolutne maksimum.
 - Przed oddaniem wersji końcowej sprawdź ją checklistą z [checklist.md](checklist.md).
 - Na końcu trybu 1 i 4 jedna linijka: To tylko sugestia. Zweryfikuj.
 
