@@ -23,6 +23,7 @@
         <a href="https://github.com/kalinatyrkiel/skillprostegojezyka">GitHub</a>
       </div>
 
+      <main>
       <header class="hero">
         <h1>Skill prostego języka</h1>
         <p class="lede">
@@ -139,27 +140,32 @@
         </div>
 
         <div class="demo">
-          <p>
-            Zobacz jedną rozmowę na żywo. Tak odpowiada tryb 1: Uprość na
-            przykładzie z checklisty.
-          </p>
+          <p>Zobacz, jak działa tryb upraszczania:</p>
           <div class="chat" role="group" aria-label="Przykładowa rozmowa ze skilliem">
             <div class="chat-bar">
               <span class="chat-avatar" aria-hidden="true"></span>
               <span>Prosty język</span>
-              <button
-                type="button"
-                class="chat-toggle"
-                id="demo-toggle"
-                aria-pressed="false"
-              >
+              <button type="button" class="chat-toggle" id="demo-toggle">
                 <span aria-hidden="true" id="demo-toggle-icon">⏸</span>
                 <span class="sr-only" id="demo-toggle-label"
                   >Wstrzymaj animację</span
                 >
               </button>
             </div>
-            <div class="chat-body" id="chat-body">
+            <div class="sr-only">
+              Przykład rozmowy. Użytkownik pisze: „uprość ten mail” — i wkleja
+              treść: „Uprzejmie informujemy, iż w celu dokończenia weryfikacji
+              zgłoszenia niezbędne jest dostarczenie skanu dokumentu
+              tożsamości, w związku z czym prosimy o jego przesłanie w terminie
+              7 dni.” Skill odpowiada. Wersja uproszczona: Prześlij skan
+              dokumentu tożsamości w ciągu 7 dni. Bez niego nie możemy
+              sprawdzić zgłoszenia. Co zostało zmienione: pisanie o pisaniu —
+              „Uprzejmie informujemy” → po prostu pisz; rzeczowniki zombie —
+              „dokończenia weryfikacji” → „sprawdzić”; najważniejsze na
+              początku — termin już w pierwszym zdaniu. To tylko sugestia.
+              Zweryfikuj.
+            </div>
+            <div class="chat-body" id="chat-body" aria-hidden="true">
               <div class="msg user">
                 <div class="bubble">
                   <p>uprość ten mail:</p>
@@ -236,7 +242,7 @@
 
         <h3 class="serif" id="cursor">Cursor</h3>
         <p>Wklej w terminal albo w czat z agentem:</p>
-        <pre><code>git clone https://github.com/kalinatyrkiel/skillprostegojezyka.git ~/prosty-jezyk
+        <pre tabindex="0"><code>git clone https://github.com/kalinatyrkiel/skillprostegojezyka.git ~/prosty-jezyk
 mkdir -p ~/.cursor/skills/prosty-jezyk
 cp ~/prosty-jezyk/SKILL.md ~/prosty-jezyk/checklist.md ~/prosty-jezyk/fiszki.md ~/prosty-jezyk/examples.md ~/.cursor/skills/prosty-jezyk/</code></pre>
         <p>
@@ -249,7 +255,7 @@ cp ~/prosty-jezyk/SKILL.md ~/prosty-jezyk/checklist.md ~/prosty-jezyk/fiszki.md 
 
         <h3 class="serif">Claude Code</h3>
         <p>Wklej w terminal albo w czat z agentem:</p>
-        <pre><code>mkdir -p ~/.claude/skills/prosty-jezyk
+        <pre tabindex="0"><code>mkdir -p ~/.claude/skills/prosty-jezyk
 cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</code></pre>
         <p>
           Po zainstalowaniu skilla możesz po prostu napisać: „użyj skilla prosty
@@ -282,6 +288,7 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
           </li>
         </ol>
       </section>
+      </main>
 
       <footer>
         <p>
@@ -312,8 +319,12 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
           await navigator.clipboard.writeText(text);
           status.textContent = "Gotowe! Prompt skopiowany do schowka.";
         } catch (error) {
-          status.textContent =
-            "Nie udało się skopiować. Otwórz prompt.md na GitHubie.";
+          status.textContent = "Nie udało się skopiować. ";
+          const link = document.createElement("a");
+          link.href =
+            "https://github.com/kalinatyrkiel/skillprostegojezyka/blob/main/prompt.md";
+          link.textContent = "Otwórz prompt.md na GitHubie.";
+          status.appendChild(link);
         }
       });
     </script>
@@ -480,7 +491,6 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
           finished = true;
           icon.textContent = "▶";
           label.textContent = "Odtwórz ponownie";
-          toggle.setAttribute("aria-pressed", "false");
         }
 
         function start() {
@@ -498,7 +508,6 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
             return;
           }
           paused = !paused;
-          toggle.setAttribute("aria-pressed", String(paused));
           icon.textContent = paused ? "▶" : "⏸";
           label.textContent = paused ? "Wznów animację" : "Wstrzymaj animację";
           if (paused) clearAll();

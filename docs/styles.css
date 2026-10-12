@@ -3,6 +3,7 @@
   --muted: #444;
   --line: #111;
   --pink: #e31c79;
+  --pink-text: #c8146b;
   --teal: #0f766e;
   --purple: #7c3aed;
   --green: #15803d;
@@ -196,7 +197,7 @@ a {
 
 .card.pink h3,
 .card.pink .label {
-  color: var(--pink);
+  color: var(--pink-text);
 }
 
 .card.teal {
@@ -457,6 +458,10 @@ footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   .caret,
   .dots span {
     animation: none;
