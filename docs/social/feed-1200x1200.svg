@@ -5,29 +5,17 @@
   <text x="80" y="220" fill="#111111" font-family="Georgia, serif" font-size="92" font-weight="700">Skill prostego</text>
   <text x="80" y="320" fill="#111111" font-family="Georgia, serif" font-size="92" font-weight="700">języka</text>
   <line x1="80" y1="350" x2="620" y2="350" stroke="#111111" stroke-width="6"/>
-  <text x="80" y="420" fill="#111111" font-family="Arial, sans-serif" font-size="40">Upraszcza treści po polsku.</text>
-  <text x="80" y="475" fill="#111111" font-family="Arial, sans-serif" font-size="40">Pomaga w pracy. Uczy pisać prosto.</text>
-  <g transform="translate(80,540)">
-    <rect x="0" y="0" width="500" height="200" rx="28" stroke="#e31c79" stroke-width="6" fill="#fff"/>
-    <text x="28" y="48" fill="#e31c79" font-family="Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="2">TRYB 1</text>
-    <line x1="28" y1="58" x2="120" y2="58" stroke="#e31c79" stroke-width="2"/>
-    <text x="28" y="110" fill="#e31c79" font-family="Georgia, serif" font-size="44" font-weight="700">Uprość</text>
-    <text x="28" y="160" fill="#111" font-family="Arial, sans-serif" font-size="28">Gotowa wersja + co zmieniłam.</text>
-    <rect x="540" y="0" width="500" height="200" rx="28" stroke="#0f766e" stroke-width="6" fill="#fff"/>
-    <text x="568" y="48" fill="#0f766e" font-family="Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="2">TRYB 2</text>
-    <line x1="568" y1="58" x2="660" y2="58" stroke="#0f766e" stroke-width="2"/>
-    <text x="568" y="110" fill="#0f766e" font-family="Georgia, serif" font-size="44" font-weight="700">Sprawdź</text>
-    <text x="568" y="160" fill="#111" font-family="Arial, sans-serif" font-size="28">Audyt checklistą.</text>
-    <rect x="0" y="230" width="500" height="200" rx="28" stroke="#7c3aed" stroke-width="6" fill="#fff"/>
-    <text x="28" y="278" fill="#7c3aed" font-family="Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="2">TRYB 3</text>
-    <line x1="28" y1="288" x2="120" y2="288" stroke="#7c3aed" stroke-width="2"/>
-    <text x="28" y="340" fill="#7c3aed" font-family="Georgia, serif" font-size="44" font-weight="700">Naucz</text>
-    <text x="28" y="390" fill="#111" font-family="Arial, sans-serif" font-size="28">Jedna fiszka. Mini-ćwiczenie.</text>
-    <rect x="540" y="230" width="500" height="200" rx="28" stroke="#15803d" stroke-width="6" fill="#fff"/>
-    <text x="568" y="278" fill="#15803d" font-family="Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="2">TRYB 4</text>
-    <line x1="568" y1="288" x2="660" y2="288" stroke="#15803d" stroke-width="2"/>
-    <text x="568" y="340" fill="#15803d" font-family="Georgia, serif" font-size="44" font-weight="700">Napisz od zera</text>
-    <text x="568" y="390" fill="#111" font-family="Arial, sans-serif" font-size="28">Dopyta. Potem propozycja tekstu.</text>
+  <text x="80" y="420" fill="#111111" font-family="Arial, sans-serif" font-size="36">Dla ChatGPT, Claude, Cursora</text>
+  <text x="80" y="470" fill="#111111" font-family="Arial, sans-serif" font-size="36">i innych narzędzi AI.</text>
+  <g transform="translate(80,560)">
+    <rect x="0" y="0" width="500" height="140" rx="28" stroke="#e31c79" stroke-width="6" fill="#fff"/>
+    <text x="250" y="88" fill="#e31c79" font-family="Georgia, serif" font-size="52" font-weight="700" text-anchor="middle">Uprość</text>
+    <rect x="540" y="0" width="500" height="140" rx="28" stroke="#0f766e" stroke-width="6" fill="#fff"/>
+    <text x="790" y="88" fill="#0f766e" font-family="Georgia, serif" font-size="52" font-weight="700" text-anchor="middle">Sprawdź</text>
+    <rect x="0" y="170" width="500" height="140" rx="28" stroke="#7c3aed" stroke-width="6" fill="#fff"/>
+    <text x="250" y="258" fill="#7c3aed" font-family="Georgia, serif" font-size="46" font-weight="700" text-anchor="middle">Naucz się</text>
+    <rect x="540" y="170" width="500" height="140" rx="28" stroke="#15803d" stroke-width="6" fill="#fff"/>
+    <text x="790" y="258" fill="#15803d" font-family="Georgia, serif" font-size="48" font-weight="700" text-anchor="middle">Napisz od zera</text>
   </g>
   <g transform="translate(900,80)">
     <rect x="0" y="60" width="110" height="110" fill="#7c3aed" transform="rotate(-18 55 115)"/>
@@ -36,6 +24,8 @@
     <rect x="50" y="200" width="110" height="110" fill="#38bdf8" transform="rotate(14 105 255)"/>
     <rect x="230" y="220" width="110" height="110" fill="#eab308" transform="rotate(20 285 275)"/>
   </g>
-  <rect x="80" y="1040" width="1040" height="80" rx="40" fill="#111111"/>
-  <text x="600" y="1095" fill="#ffffff" font-family="Arial, sans-serif" font-size="32" font-weight="600" text-anchor="middle">kalinatyrkiel.github.io/skillprostegojezyka</text>
+  <text x="80" y="1035" fill="#111111" font-family="Arial, sans-serif" font-size="42" font-weight="600" text-decoration="underline" text-decoration-thickness="2">kalinatyrkiel.github.io/skillprostegojezyka</text>
+  <text x="80" y="1095" fill="#444444" font-family="Arial, sans-serif" font-size="26">Checklista i fiszki prostego języka: 2022</text>
+  <text x="80" y="1135" fill="#444444" font-family="Arial, sans-serif" font-size="26">Skill: 2026</text>
+
 </svg>
