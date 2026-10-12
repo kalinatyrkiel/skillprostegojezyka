@@ -10,7 +10,7 @@ Uprzejmie informujemy, iż w celu dokończenia weryfikacji zgłoszenia niezbędn
 
 **Po**
 
-Prześlij skan dokumentu tożsamości w ciągu 7 dni. Bez niego nie dokończymy sprawdzania zgłoszenia.
+Prześlij skan dokumentu tożsamości w ciągu 7 dni. Bez niego nie możemy sprawdzić zgłoszenia.
 
 **Reguły:** pisanie o komunikowaniu, rzeczowniki zombie, konkretny czasownik, najważniejsze na początku, zdania < 15 słów.
 
