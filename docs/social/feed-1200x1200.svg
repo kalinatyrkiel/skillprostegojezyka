@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" fill="none">
   <rect width="1200" height="1200" fill="#ffffff"/>
-  <text x="80" y="100" fill="#111111" font-family="Georgia, serif" font-size="28" font-weight="700" letter-spacing="2">PISZ PO PROSTU — SKILL</text>
+  <text x="80" y="100" fill="#111111" font-family="Georgia, serif" font-size="28" font-weight="700" letter-spacing="2">PISZ PO PROSTU</text>
   <text x="80" y="220" fill="#111111" font-family="Georgia, serif" font-size="92" font-weight="700">Skill prostego</text>
   <text x="80" y="320" fill="#111111" font-family="Georgia, serif" font-size="92" font-weight="700">języka</text>
   <line x1="80" y1="350" x2="620" y2="350" stroke="#111111" stroke-width="6"/>
