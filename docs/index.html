@@ -331,12 +331,14 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
 
       async function copyPrompt() {
         status.textContent = "Kopiuję…";
+        status.classList.remove("ok");
         try {
           const response = await fetch(url);
           if (!response.ok) throw new Error("fetch");
           const text = await response.text();
           await navigator.clipboard.writeText(text);
           status.textContent = "Gotowe! Prompt skopiowany do schowka.";
+          status.classList.add("ok");
         } catch (error) {
           status.textContent = "Nie udało się skopiować. ";
           const link = document.createElement("a");
