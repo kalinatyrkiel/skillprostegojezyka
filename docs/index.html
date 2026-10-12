@@ -361,6 +361,7 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
         var paused = false;
         var step = 0;
         var started = false;
+        var finished = false;
 
         function wait(ms, fn) {
           timeouts.push(setTimeout(fn, ms));
@@ -429,8 +430,8 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
               if (s.tag === "fine") el.className = "fine";
               bubble.appendChild(el);
             }
-            typeInto(el, s.text, 7, function () {
-              wait(160, next);
+            typeInto(el, s.text, 22, function () {
+              wait(350, next);
             });
           })();
         }
@@ -440,8 +441,8 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
             body.innerHTML = "";
             var b = addBubble("user");
             b.style.whiteSpace = "pre-line";
-            typeInto(b, USER, 8, function () {
-              wait(600, done);
+            typeInto(b, USER, 30, function () {
+              wait(1000, done);
             });
           },
           function think(done) {
@@ -450,14 +451,12 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
             d.innerHTML =
               '<div class="bubble dots"><span></span><span></span><span></span></div>';
             body.appendChild(d);
-            wait(1300, done);
+            wait(2000, done);
           },
           function typeSkill(done) {
             body.lastChild.remove();
             var b = addBubble("skill");
-            typeSegments(b, SKILL, function () {
-              wait(4200, done);
-            });
+            typeSegments(b, SKILL, done);
           },
         ];
 
@@ -465,8 +464,16 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
           step = i;
           clearAll();
           steps[i](function () {
-            runStep((i + 1) % steps.length);
+            if (i === steps.length - 1) finish();
+            else runStep(i + 1);
           });
+        }
+
+        function finish() {
+          finished = true;
+          icon.textContent = "▶";
+          label.textContent = "Odtwórz ponownie";
+          toggle.setAttribute("aria-pressed", "false");
         }
 
         function start() {
@@ -476,6 +483,13 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
         }
 
         toggle.addEventListener("click", function () {
+          if (finished) {
+            finished = false;
+            icon.textContent = "⏸";
+            label.textContent = "Wstrzymaj animację";
+            runStep(0);
+            return;
+          }
           paused = !paused;
           toggle.setAttribute("aria-pressed", String(paused));
           icon.textContent = paused ? "▶" : "⏸";
