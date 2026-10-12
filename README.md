@@ -26,8 +26,12 @@ Na starcie agent pyta (albo rozpoznaje z prośby):
 
 1. **Uprość** — proponuje prostszą wersję i krótkie „co zostało zmienione”
 2. **Sprawdź** — audyt checklistą (cytat → reguła → propozycja), a na końcu pytanie: „Czy chcesz zobaczyć przykładową przepisaną wersję?”
-3. **Naucz** — jedna fiszka i mini-ćwiczenie
+3. **Naucz** — jedna fiszka i ćwiczenie; podpowiada, aż poprawisz zdanie samodzielnie
 4. **Napisz od zera** — dopyta o odbiorcę, cel i kanał, potem napisze
+
+## Zmiana względem checklisty i fiszek
+
+Jedną rzecz zmieniłyśmy: piszemy „mail”, nie „mejl”. Obie formy są poprawne. Wybrałyśmy tę, którą lepiej znamy z codziennej komunikacji.
 
 ## Instalacja: Cursor
 

@@ -167,6 +167,10 @@
           w Cursorze, Claude Code i innych, podobnych aplikacjach.
         </p>
         <p>
+          Jedną rzecz zmieniłyśmy: piszemy „mail”, nie „mejl”. Obie formy są
+          poprawne. Wybrałyśmy tę, którą lepiej znamy z codziennej komunikacji.
+        </p>
+        <p>
           <a href="https://tiny.cc/ProstyJezyk"
             >Checklista i fiszki Prostego Języka (materiały źródłowe)</a
           >
@@ -195,7 +199,10 @@
           <article class="card purple">
             <p class="label">Tryb 3</p>
             <h3>Naucz</h3>
-            <p>Jedna fiszka. Mini-ćwiczenie. Na końcu feedback.</p>
+            <p>
+              Jedna fiszka i ćwiczenie. Podpowiedzi, aż poprawisz zdanie
+              samodzielnie.
+            </p>
           </article>
           <article class="card green">
             <p class="label">Tryb 4</p>
@@ -426,14 +433,13 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
           var caret = document.createElement("span");
           caret.className = "caret";
           el.appendChild(caret);
+          var node = document.createTextNode("");
+          el.insertBefore(node, caret);
           var i = 0;
           var step = speed === "stream" ? 3 : 1;
           (function tick() {
             if (i < text.length) {
-              caret.parentNode.insertBefore(
-                document.createTextNode(text.slice(i, i + step)),
-                caret
-              );
+              node.appendData(text.slice(i, i + step));
               i += step;
               stickBottom();
               var delay =
