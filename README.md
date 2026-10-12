@@ -58,7 +58,7 @@ W projekcie: `.claude/skills/prosty-jezyk/` z tymi samymi plikami.
 
 Wskaż agentowi plik `SKILL.md` (custom instructions / agent skill). Obok muszą leżeć `checklist.md`, `fiszki.md` i `examples.md` — skill do nich odsyła.
 
-## ChatGPT, Gemini i inne czaty bez skilli
+## ChatGPT, Gemini, Claude i inne czaty
 
 1. Otwórz [prompt.md](prompt.md).
 2. Skopiuj całość.
