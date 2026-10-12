@@ -57,6 +57,7 @@ Pisz tak. W trybie Sprawdź oceniaj, czy tekst tak jest.
 - Nie przeczyć dwa razy, gdy wystarczy stwierdzić. Zostaw *nikt nie*, *nic nie*.
 - Konkretne czasowniki. *Podaj* → *wpisz*, *zweryfikuj* → *sprawdź* to **przykłady, nie słownik**. Szukaj analogicznych par: ogólne albo trudne słowo → konkretne i proste.
 - Najprostsza wersja słowa.
+- Nie zakładaj płci odbiorcy. Unikaj *zapomniałeś*, *jesteś pewien*, *zamawiał*, *podałeś*. Formy neutralne, bezosobowe albo rozkaz: *Nie pamiętasz hasła?* zamiast *Zapomniałeś hasła?*; *Podaj numer telefonu* zamiast *Nie podałeś numeru*; *Czy na pewno chcesz usunąć konto?* zamiast *Czy jesteś pewien…?*
 
 ### Interpunkcja
 

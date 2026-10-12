@@ -61,6 +61,17 @@ Każdy plik może mieć najwyżej 5 MB. Termin: 30.11.
 
 **Reguły:** nagłówek mówi, o czym jest akapit; lista ze zdaniem wprowadzającym; imiesłowy i rzeczowniki zombie usunięte; 1 myśl na akapit.
 
+## UI i komunikaty: nie zakładaj płci odbiorcy
+
+| Nie | Tak |
+| --- | --- |
+| Zapomniałeś hasła? | Nie pamiętasz hasła? |
+| Kiedy będziesz zamawiał taksówkę | Kiedy będziesz zamawiać taksówkę? |
+| Nie podałeś numeru telefonu. | Podaj numer telefonu. |
+| Czy jesteś pewien, że chcesz usunąć konto? | Czy na pewno chcesz usunąć konto? |
+
+**Reguły:** brak form męskich wobec odbiorcy; rozkaz zamiast opisu błędu w formie męskiej; *czy na pewno* zamiast *czy jesteś pewien*; prostsze, krótsze zdania.
+
 ## Zakończenie mejla
 
 **Przed**
