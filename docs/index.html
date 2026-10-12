@@ -332,8 +332,9 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
           return;
         }
 
-        var USER =
-          "uprość ten mail:\nUprzejmie informujemy, iż w celu dokończenia weryfikacji zgłoszenia niezbędne jest dostarczenie skanu dokumentu tożsamości, w związku z czym prosimy o jego przesłanie w terminie 7 dni.";
+        var USER_INTRO = "uprość ten mail:";
+        var USER_MAIL =
+          "Uprzejmie informujemy, iż w celu dokończenia weryfikacji zgłoszenia niezbędne jest dostarczenie skanu dokumentu tożsamości, w związku z czym prosimy o jego przesłanie w terminie 7 dni.";
 
         var SKILL = [
           { tag: "strong", text: "Wersja uproszczona" },
@@ -384,7 +385,9 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
                 caret
               );
               i++;
-              wait(speed, tick);
+              var delay =
+                speed === "human" ? 50 + Math.random() * 90 : speed;
+              wait(delay, tick);
             } else {
               caret.remove();
               done();
@@ -440,9 +443,13 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
           function typeUser(done) {
             body.innerHTML = "";
             var b = addBubble("user");
-            b.style.whiteSpace = "pre-line";
-            typeInto(b, USER, 30, function () {
-              wait(1000, done);
+            var intro = document.createElement("p");
+            b.appendChild(intro);
+            typeInto(intro, USER_INTRO, "human", function () {
+              var pasted = document.createElement("p");
+              pasted.textContent = USER_MAIL;
+              b.appendChild(pasted);
+              wait(700, done);
             });
           },
           function think(done) {
