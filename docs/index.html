@@ -74,7 +74,8 @@
               AI.
             </li>
             <li>
-              <a href="#prompt">Skopiuj prompt</a> i wklej go w czacie.
+              <a href="#prompt" id="copy-prompt-link">Skopiuj prompt</a> i
+              wklej go w czacie.
             </li>
           </ol>
           <p>
@@ -303,12 +304,11 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
       </footer>
     </div>
     <script>
-      const button = document.getElementById("copy-prompt");
       const status = document.getElementById("copy-status");
       const url =
         "https://raw.githubusercontent.com/kalinatyrkiel/skillprostegojezyka/main/prompt.md";
 
-      button.addEventListener("click", async () => {
+      async function copyPrompt() {
         status.textContent = "Kopiuję…";
         try {
           const response = await fetch(url);
@@ -324,7 +324,14 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
           link.textContent = "Otwórz prompt.md na GitHubie.";
           status.appendChild(link);
         }
-      });
+      }
+
+      document
+        .getElementById("copy-prompt")
+        .addEventListener("click", copyPrompt);
+      document
+        .getElementById("copy-prompt-link")
+        .addEventListener("click", copyPrompt);
     </script>
     <script>
       (function () {
