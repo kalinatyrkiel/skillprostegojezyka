@@ -24,8 +24,8 @@
     <rect x="50" y="200" width="110" height="110" fill="#38bdf8" transform="rotate(14 105 255)"/>
     <rect x="230" y="220" width="110" height="110" fill="#eab308" transform="rotate(20 285 275)"/>
   </g>
-  <text x="80" y="1035" fill="#111111" font-family="Arial, sans-serif" font-size="42" font-weight="600" text-decoration="underline" text-decoration-thickness="2">kalinatyrkiel.github.io/skillprostegojezyka</text>
-  <text x="80" y="1095" fill="#444444" font-family="Arial, sans-serif" font-size="26">Checklista i fiszki prostego języka: 2022</text>
-  <text x="80" y="1135" fill="#444444" font-family="Arial, sans-serif" font-size="26">Skill: 2026</text>
+  <text x="80" y="990" fill="#111111" font-family="Arial, sans-serif" font-size="42" font-weight="600" text-decoration="underline" text-decoration-thickness="2">kalinatyrkiel.github.io/skillprostegojezyka</text>
+  <text x="80" y="1050" fill="#444444" font-family="Arial, sans-serif" font-size="26">Checklista i fiszki prostego języka: 2022</text>
+  <text x="80" y="1090" fill="#444444" font-family="Arial, sans-serif" font-size="26">Skill: 2026</text>
 
 </svg>
