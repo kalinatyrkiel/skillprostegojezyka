@@ -56,7 +56,7 @@ W projekcie: `.claude/skills/prosty-jezyk/` z tymi samymi plikami.
 
 ## Ręczne dodanie skilla do Agenta AI (np. Claude, Copilot)
 1. Pobierz najnowszy release skilla z zakładki [Releases](https://github.com/kalinatyrkiel/skillprostegojezyka/releases).
-2. W narzędziu, z którego korzystasz, znajdź miejsce, w którym możesz stworzyć skilla lub agenta. W Copilocie to na przykład zakładka Agenci, w Claude możesz dodać Skilla w Ustawieniach.
+2. W narzędziu, z którego korzystasz, znajdź miejsce, w którym możesz stworzyć skilla lub agenta. Zobacz [instrukcje dla Microsoft Copilot](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/skills-create).
 3. Wgraj pliki i zapisz.
 4. Rozpoczynając konwersację, wskaż, że agent AI ma korzystać ze skilla lub wybierz go z listy.
 
