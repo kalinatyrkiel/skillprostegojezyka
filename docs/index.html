@@ -137,6 +137,67 @@
             </p>
           </article>
         </div>
+
+        <div class="demo">
+          <p>
+            Zobacz jedną rozmowę na żywo. Tak odpowiada tryb 1: Uprość na
+            przykładzie z checklisty.
+          </p>
+          <div class="chat" role="group" aria-label="Przykładowa rozmowa ze skilliem">
+            <div class="chat-bar">
+              <span class="chat-avatar" aria-hidden="true"></span>
+              <span>Prosty język</span>
+              <button
+                type="button"
+                class="chat-toggle"
+                id="demo-toggle"
+                aria-pressed="false"
+              >
+                <span aria-hidden="true" id="demo-toggle-icon">⏸</span>
+                <span class="sr-only" id="demo-toggle-label"
+                  >Wstrzymaj animację</span
+                >
+              </button>
+            </div>
+            <div class="chat-body" id="chat-body">
+              <div class="msg user">
+                <div class="bubble">
+                  <p>uprość ten mail:</p>
+                  <p>
+                    Uprzejmie informujemy, iż w celu dokończenia weryfikacji
+                    zgłoszenia niezbędne jest dostarczenie skanu dokumentu
+                    tożsamości, w związku z czym prosimy o jego przesłanie w
+                    terminie 7 dni.
+                  </p>
+                </div>
+              </div>
+              <div class="msg skill">
+                <div class="bubble">
+                  <p><strong>Wersja uproszczona</strong></p>
+                  <p>
+                    Prześlij skan dokumentu tożsamości w ciągu 7 dni. Bez niego
+                    nie dokończymy sprawdzania zgłoszenia.
+                  </p>
+                  <p><strong>Co zostało zmienione</strong></p>
+                  <ul>
+                    <li>
+                      pisanie o pisaniu: „Uprzejmie informujemy” → po prostu
+                      pisz
+                    </li>
+                    <li>
+                      rzeczowniki zombie: „dokończenia weryfikacji” →
+                      „sprawdzania”
+                    </li>
+                    <li>
+                      najważniejsze na początku: termin już w pierwszym zdaniu
+                    </li>
+                  </ul>
+                  <p class="fine">To tylko sugestia. Zweryfikuj.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section>
@@ -255,6 +316,188 @@ cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</c
             "Nie udało się skopiować. Otwórz prompt.md na GitHubie.";
         }
       });
+    </script>
+    <script>
+      (function () {
+        var body = document.getElementById("chat-body");
+        var toggle = document.getElementById("demo-toggle");
+        var icon = document.getElementById("demo-toggle-icon");
+        var label = document.getElementById("demo-toggle-label");
+        if (!body || !toggle) return;
+        var reduce = window.matchMedia(
+          "(prefers-reduced-motion: reduce)"
+        ).matches;
+        if (reduce) {
+          toggle.hidden = true;
+          return;
+        }
+
+        var USER =
+          "uprość ten mail:\nUprzejmie informujemy, iż w celu dokończenia weryfikacji zgłoszenia niezbędne jest dostarczenie skanu dokumentu tożsamości, w związku z czym prosimy o jego przesłanie w terminie 7 dni.";
+
+        var SKILL = [
+          { tag: "strong", text: "Wersja uproszczona" },
+          {
+            tag: "p",
+            text: "Prześlij skan dokumentu tożsamości w ciągu 7 dni. Bez niego nie dokończymy sprawdzania zgłoszenia.",
+          },
+          { tag: "strong", text: "Co zostało zmienione" },
+          {
+            tag: "li",
+            text: "pisanie o pisaniu: „Uprzejmie informujemy” → po prostu pisz",
+          },
+          {
+            tag: "li",
+            text: "rzeczowniki zombie: „dokończenia weryfikacji” → „sprawdzania”",
+          },
+          {
+            tag: "li",
+            text: "najważniejsze na początku: termin już w pierwszym zdaniu",
+          },
+          { tag: "fine", text: "To tylko sugestia. Zweryfikuj." },
+        ];
+
+        var timeouts = [];
+        var paused = false;
+        var step = 0;
+        var started = false;
+
+        function wait(ms, fn) {
+          timeouts.push(setTimeout(fn, ms));
+        }
+
+        function clearAll() {
+          timeouts.forEach(clearTimeout);
+          timeouts = [];
+        }
+
+        function typeInto(el, text, speed, done) {
+          var caret = document.createElement("span");
+          caret.className = "caret";
+          el.appendChild(caret);
+          var i = 0;
+          (function tick() {
+            if (i < text.length) {
+              caret.parentNode.insertBefore(
+                document.createTextNode(text[i]),
+                caret
+              );
+              i++;
+              wait(speed, tick);
+            } else {
+              caret.remove();
+              done();
+            }
+          })();
+        }
+
+        function addBubble(kind) {
+          var wrap = document.createElement("div");
+          wrap.className = "msg " + kind;
+          var b = document.createElement("div");
+          b.className = "bubble";
+          wrap.appendChild(b);
+          body.appendChild(wrap);
+          return b;
+        }
+
+        function typeSegments(bubble, segs, done) {
+          var i = 0;
+          var ul = null;
+          (function next() {
+            if (i >= segs.length) {
+              done();
+              return;
+            }
+            var s = segs[i++];
+            var el;
+            if (s.tag === "li") {
+              if (!ul) {
+                ul = document.createElement("ul");
+                bubble.appendChild(ul);
+              }
+              el = document.createElement("li");
+              ul.appendChild(el);
+            } else {
+              ul = null;
+              el = document.createElement("p");
+              if (s.tag === "strong") {
+                var st = document.createElement("strong");
+                el.appendChild(st);
+                el = st;
+              }
+              if (s.tag === "fine") el.className = "fine";
+              bubble.appendChild(el);
+            }
+            typeInto(el, s.text, 7, function () {
+              wait(160, next);
+            });
+          })();
+        }
+
+        var steps = [
+          function typeUser(done) {
+            body.innerHTML = "";
+            var b = addBubble("user");
+            b.style.whiteSpace = "pre-line";
+            typeInto(b, USER, 8, function () {
+              wait(600, done);
+            });
+          },
+          function think(done) {
+            var d = document.createElement("div");
+            d.className = "msg skill";
+            d.innerHTML =
+              '<div class="bubble dots"><span></span><span></span><span></span></div>';
+            body.appendChild(d);
+            wait(1300, done);
+          },
+          function typeSkill(done) {
+            body.lastChild.remove();
+            var b = addBubble("skill");
+            typeSegments(b, SKILL, function () {
+              wait(4200, done);
+            });
+          },
+        ];
+
+        function runStep(i) {
+          step = i;
+          clearAll();
+          steps[i](function () {
+            runStep((i + 1) % steps.length);
+          });
+        }
+
+        function start() {
+          if (started) return;
+          started = true;
+          runStep(0);
+        }
+
+        toggle.addEventListener("click", function () {
+          paused = !paused;
+          toggle.setAttribute("aria-pressed", String(paused));
+          icon.textContent = paused ? "▶" : "⏸";
+          label.textContent = paused ? "Wznów animację" : "Wstrzymaj animację";
+          if (paused) clearAll();
+          else runStep(step);
+        });
+
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) {
+                start();
+                io.disconnect();
+              }
+            });
+          });
+          io.observe(body);
+        } else {
+          start();
+        }
+      })();
     </script>
   </body>
 </html>

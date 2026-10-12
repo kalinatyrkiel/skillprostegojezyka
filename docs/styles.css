@@ -300,3 +300,165 @@ footer {
   border-top: 2px solid var(--ink);
   font-size: 1rem;
 }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.demo {
+  margin: 2.5rem 0 0;
+}
+
+.chat {
+  max-width: 27rem;
+  border: 3px solid var(--ink);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background: #fff;
+  margin: 1.25rem 0 0;
+}
+
+.chat-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.9rem;
+  border-bottom: 2px solid var(--ink);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.chat-avatar {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: var(--pink);
+  flex: none;
+}
+
+.chat-toggle {
+  margin-left: auto;
+  border: none;
+  background: none;
+  padding: 0.1rem 0.3rem;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--ink);
+}
+
+.chat-body {
+  padding: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  justify-content: flex-end;
+  min-height: 25rem;
+}
+
+.msg {
+  display: flex;
+}
+
+.msg.user {
+  justify-content: flex-end;
+}
+
+.bubble {
+  background: #f6f6f6;
+  border-radius: 1rem;
+  border-bottom-left-radius: 0.25rem;
+  padding: 0.65rem 0.85rem;
+  max-width: 100%;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.msg.user .bubble {
+  background: #fde7f3;
+  border-radius: 1rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.bubble p {
+  margin: 0.2rem 0;
+}
+
+.bubble ul {
+  margin: 0.3rem 0;
+  padding-left: 1.1rem;
+}
+
+.bubble .fine {
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.caret {
+  display: inline-block;
+  width: 0.55em;
+  height: 1em;
+  background: var(--ink);
+  vertical-align: text-bottom;
+  margin-left: 1px;
+  animation: blink 1s steps(1) infinite;
+}
+
+.dots {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.dots span {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--muted);
+  opacity: 0.4;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+.dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 480px) {
+  .chat-body {
+    min-height: 30rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .caret,
+  .dots span {
+    animation: none;
+  }
+}
