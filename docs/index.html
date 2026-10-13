@@ -278,6 +278,7 @@
           <pre tabindex="0" id="cmd-cursor"><code>git clone https://github.com/kalinatyrkiel/skillprostegojezyka.git ~/prosty-jezyk
 mkdir -p ~/.cursor/skills/prosty-jezyk
 cp ~/prosty-jezyk/SKILL.md ~/prosty-jezyk/checklist.md ~/prosty-jezyk/fiszki.md ~/prosty-jezyk/examples.md ~/.cursor/skills/prosty-jezyk/</code></pre>
+          <p class="status" aria-live="polite"></p>
         </div>
         <p>
           Albo skopiuj cały folder do <code>~/.cursor/skills/prosty-jezyk/</code>.
@@ -318,6 +319,7 @@ for f in SKILL.md checklist.md fiszki.md examples.md; do
   curl -fsSLo ~/.claude/skills/prosty-jezyk/$f \
     https://raw.githubusercontent.com/kalinatyrkiel/skillprostegojezyka/main/$f
 done</code></pre>
+          <p class="status" aria-live="polite"></p>
         </div>
         <p>
           Po zainstalowaniu skilla możesz po prostu napisać: „użyj skilla prosty
@@ -422,6 +424,8 @@ done</code></pre>
       document.querySelectorAll(".copy-cmd").forEach(function (button) {
         var icon = button.innerHTML;
         var label = button.getAttribute("aria-label");
+        var block = button.closest(".copyable");
+        var msg = block ? block.querySelector(".status") : null;
         button.addEventListener("click", async function () {
           var target = document.getElementById(button.dataset.copy);
           if (!target) return;
@@ -430,18 +434,24 @@ done</code></pre>
             button.innerHTML = ICON_CHECK;
             button.classList.add("ok");
             button.setAttribute("aria-label", "Skopiowano");
-            status.textContent = "Komenda skopiowana do schowka.";
-            status.classList.add("ok");
+            if (msg) {
+              msg.textContent = "Komenda skopiowana do schowka.";
+              msg.classList.add("ok");
+            }
           } catch (error) {
-            status.textContent =
-              "Nie udało się skopiować. Zaznacz komendę w bloku i skopiuj ręcznie.";
+            if (msg) {
+              msg.textContent =
+                "Nie udało się skopiować. Zaznacz komendę w bloku i skopiuj ręcznie.";
+            }
           }
           setTimeout(function () {
             button.innerHTML = icon;
             button.classList.remove("ok");
             button.setAttribute("aria-label", label);
-            status.textContent = "";
-            status.classList.remove("ok");
+            if (msg) {
+              msg.textContent = "";
+              msg.classList.remove("ok");
+            }
           }, 2000);
         });
       });
