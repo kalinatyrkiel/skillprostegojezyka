@@ -276,14 +276,21 @@ code {
   top: 0.5rem;
   right: 0.5rem;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
   border: 2px solid var(--ink);
-  background: var(--paper, #fff);
+  background: var(--paper);
   color: var(--ink);
-  padding: 0.25rem 0.75rem;
-  border-radius: 999px;
-  font: inherit;
-  font-size: 0.8rem;
+  border-radius: 0.75rem;
   cursor: pointer;
+}
+
+.copy-cmd svg {
+  display: block;
 }
 
 .copy-cmd:hover {
