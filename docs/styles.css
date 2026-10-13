@@ -248,11 +248,19 @@ a {
 
 pre {
   overflow: auto;
+  white-space: pre;
   background: #f6f6f6;
   padding: 1rem;
   border-radius: 0.75rem;
   font-size: 0.9rem;
   line-height: 1.4;
+}
+
+@media (min-width: 1080px) {
+  pre {
+    margin-left: -3rem;
+    margin-right: -3rem;
+  }
 }
 
 code {
