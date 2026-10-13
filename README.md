@@ -1,6 +1,6 @@
 # Prosty język
 
-Skill (i prompt) do upraszczania treści po polsku. Upraszcza, pomaga przy pracy i uczy. Oparty na Checkliście Prostego Języka Barbary Adamskiej i Kaliny Tyrkiel-Szymańskiej, 2026 (edycja pierwsza: 2022).
+Skill (i prompt) do upraszczania treści po polsku. Upraszcza, pomaga przy pracy i uczy. Oparty na Checkliście Prostego Języka Barbary Adamskiej i Kaliny Tyrkiel-Szymańskiej, 2026 (edycja pierwsza: 2021).
 
 Korzystaj z narzędzia przez agenta AI (np. w Cursor, Claude Code lub w podobnych narzędziach) lub przez wklejony prompt w czacie.
 
