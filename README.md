@@ -52,8 +52,7 @@ W Cursorze możesz też napisać: „użyj skilla prosty język” i wkleić tek
 ## Instalacja: Claude Code
 
 ```bash
-mkdir -p ~/.claude/skills/prosty-jezyk
-cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/
+mkdir -p ~/.claude/skills/prosty-jezyk && for f in SKILL.md checklist.md fiszki.md examples.md; do curl -fsSLo ~/.claude/skills/prosty-jezyk/$f https://raw.githubusercontent.com/kalinatyrkiel/skillprostegojezyka/main/$f; done
 ```
 
 W projekcie: `.claude/skills/prosty-jezyk/` z tymi samymi plikami.

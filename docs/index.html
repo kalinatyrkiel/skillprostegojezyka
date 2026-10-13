@@ -264,8 +264,7 @@ cp ~/prosty-jezyk/SKILL.md ~/prosty-jezyk/checklist.md ~/prosty-jezyk/fiszki.md 
 
         <h3 class="serif">Claude Code</h3>
         <p>Wklej w terminal albo w czat z agentem:</p>
-        <pre tabindex="0"><code>mkdir -p ~/.claude/skills/prosty-jezyk
-cp SKILL.md checklist.md fiszki.md examples.md ~/.claude/skills/prosty-jezyk/</code></pre>
+        <pre tabindex="0"><code>mkdir -p ~/.claude/skills/prosty-jezyk &amp;&amp; for f in SKILL.md checklist.md fiszki.md examples.md; do curl -fsSLo ~/.claude/skills/prosty-jezyk/$f https://raw.githubusercontent.com/kalinatyrkiel/skillprostegojezyka/main/$f; done</code></pre>
         <p>
           Po zainstalowaniu skilla możesz po prostu napisać: „użyj skilla prosty
           język” i wkleić tekst.
