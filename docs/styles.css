@@ -246,6 +246,41 @@ a {
   padding: 0.2rem 0 0.2rem 1rem;
 }
 
+.faq {
+  margin-top: 0.5rem;
+  border-bottom: 2px solid var(--ink);
+}
+
+.faq details {
+  border-top: 2px solid var(--ink);
+  padding: 0.85rem 0;
+}
+
+.faq summary {
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  max-width: 40rem;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::before {
+  content: "+ ";
+  font-weight: 400;
+}
+
+.faq details[open] summary::before {
+  content: "− ";
+}
+
+.faq details p {
+  margin: 0.65rem 0 0;
+  color: var(--muted);
+}
+
 pre {
   overflow: auto;
   white-space: pre;
@@ -355,9 +390,9 @@ button,
 }
 
 footer {
-  margin-top: 3rem;
-  padding-top: 1.5rem;
-  border-top: 2px solid var(--ink);
+  margin-top: 1.5rem;
+  padding-top: 0;
+  border-top: none;
   font-size: 1rem;
 }
 
